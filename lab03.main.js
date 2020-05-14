@@ -90,7 +90,7 @@ function main() {
       if (error) {
         console.error(`  Error returned from GET request: ${error}`);
       }
-      console.log(`  Response returned from GET request: {ipv4: ${data.ipv4}, ipv6: ${data.ipv6}}`);
+      console.log(`  Response returned from GET request: ` + JSON.stringify(data));
     });
   }
   // Iterate over sampleIpv4s and pass the element's value to getIpv4MappedIpv6Address().
